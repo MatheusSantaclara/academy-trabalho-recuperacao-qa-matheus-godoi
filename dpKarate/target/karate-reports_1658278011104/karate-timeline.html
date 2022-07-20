@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"teste[1:10]","start":1658276976326,"end":1658276977351,"title":"teste[1:10] 21:29:36.326-21:29:37.351 Cadastro realizado com sucesso","className":"failed"},{"id":2,"group":1,"content":"teste[2:21]","start":1658276977392,"end":1658276977400,"title":"teste[2:21] 21:29:37.392-21:29:37.400 Cadastro com email já cadastrado","className":"failed"},{"id":3,"group":1,"content":"teste[3:30]","start":1658276977426,"end":1658276977435,"title":"teste[3:30] 21:29:37.426-21:29:37.435 Cadastro com nome maior que 100 caracteres","className":"failed"},{"id":4,"group":1,"content":"teste[4:39]","start":1658276977457,"end":1658276977485,"title":"teste[4:39] 21:29:37.457-21:29:37.485 Cadastro com email maior que 60 caracteres","className":"failed"},{"id":5,"group":1,"content":"teste[5:48]","start":1658276977511,"end":1658276977517,"title":"teste[5:48] 21:29:37.511-21:29:37.517 Cadastrar um usuario sem domínio no email","className":"failed"},{"id":6,"group":1,"content":"teste[6:59]","start":1658276977536,"end":1658276977542,"title":"teste[6:59] 21:29:37.536-21:29:37.542 Cadastrar um usuario somente com o domínio do email","className":"failed"},{"id":7,"group":1,"content":"teste[7:70]","start":1658276977561,"end":1658276977642,"title":"teste[7:70] 21:29:37.561-21:29:37.642 Cadastro sem preencher o email","className":"failed"},{"id":8,"group":1,"content":"teste[8:80]","start":1658276977663,"end":1658276977669,"title":"teste[8:80] 21:29:37.663-21:29:37.669 Cadastro sem preencher o nome","className":"failed"},{"id":9,"group":1,"content":"teste[9:90]","start":1658276977690,"end":1658276977695,"title":"teste[9:90] 21:29:37.690-21:29:37.695 Cadastro sem preencher a senha","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

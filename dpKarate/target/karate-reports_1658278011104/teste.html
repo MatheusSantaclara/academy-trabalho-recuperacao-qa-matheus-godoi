@@ -1,0 +1,2671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("6f077f01-d1ad-4d35-938c-b458d98d2949",{name:"admin"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>teste</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">9</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-07-19 09:29:37 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Cadastro realizado com sucesso</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:21]"><span>[2:21]</span> <span>Cadastro com email já cadastrado</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:30]"><span>[3:30]</span> <span>Cadastro com nome maior que 100 caracteres</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:39]"><span>[4:39]</span> <span>Cadastro com email maior que 60 caracteres</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:48]"><span>[5:48]</span> <span>Cadastrar um usuario sem domínio no email</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:59]"><span>[6:59]</span> <span>Cadastrar um usuario somente com o domínio do email</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[7:70]"><span>[7:70]</span> <span>Cadastro sem preencher o email</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[8:80]"><span>[8:80]</span> <span>Cadastro sem preencher o nome</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[9:90]"><span>[9:90]</span> <span>Cadastro sem preencher a senha</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">teste.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Criar Usuario</span>
+          <span class="feature-description">Como uma pessoa qualquer
+    Desejo me registrar no sistema
+    Para ter acesso as funcionalidades de lista de compras</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Cadastro realizado com sucesso</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>890</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">890</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.349 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def name = java.util.UUID.randomUUID() + &quot;user&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def email = java.util.UUID.randomUUID() + &quot;@academy-airlines.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def password = Date.now() + &quot;academy&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;#(payload.name)&quot;, email: &quot;#(payload.email)&quot;, password: &quot;#(payload.password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == { id: &quot;#string&quot;, name: &quot;#(payload.name)&quot;, email: &quot;#(payload.email)&quot;, is_admin: &quot;#boolean&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:21]</span>
+                <span class="scenario-name">Cadastro com email já cadastrado</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.400 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>call read(&quot;hook.feature@criarUsuario&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;#(payload.name)&quot;, email: &quot;#(payload.email)&quot;, password: &quot;#(payload.password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == { &quot;error&quot;: &quot;User already exists.&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:30]</span>
+                <span class="scenario-name">Cadastro com nome maior que 100 caracteres</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.436 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def name = java.util.UUID.randomUUID() + &quot;07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def email = java.util.UUID.randomUUID() + &quot;@academy.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;#(payload.name)&quot;, email: &quot;#(payload.email)&quot;, password: &quot;#(payload.password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref skipped">37</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:39]</span>
+                <span class="scenario-name">Cadastro com email maior que 60 caracteres</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.485 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref skipped">40</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def name = java.util.UUID.randomUUID() + &quot;07cf98a4-8070-4f74-bd40-43bb039e569b07cf98a4-8070-4f74-bd40-43bb0&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref skipped">41</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def email = java.util.UUID.randomUUID() + &quot;094e3591c48bd@academy.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref skipped">44</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;#(payload.name)&quot;, email: &quot;#(payload.email)&quot;, password: &quot;#(payload.password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref skipped">45</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:48]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:48]</span>
+                <span class="scenario-name">Cadastrar um usuario sem domínio no email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:48]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:48]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.517 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:48]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref skipped">49</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def name = java.util.UUID.randomUUID() + &quot;user&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref skipped">50</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def email = java.util.UUID.randomUUID()</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref skipped">51</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def password = Date.now() + &quot;academy&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref skipped">52</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref skipped">54</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;#(payload.name)&quot;, email: &quot;#(payload.email)&quot;, password: &quot;#(payload.password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref skipped">57</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == { &quot;error&quot;: &quot;Bad request.&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:59]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:59]</span>
+                <span class="scenario-name">Cadastrar um usuario somente com o domínio do email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:59]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:59]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.543 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:59]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref skipped">60</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def name = java.util.UUID.randomUUID() + &quot;user&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref skipped">61</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def email = &quot;@academy.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref skipped">62</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def password = Date.now() + &quot;academy&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref skipped">63</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;#(payload.name)&quot;, email: &quot;#(payload.email)&quot;, password: &quot;#(payload.password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref skipped">68</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == { &quot;error&quot;: &quot;Bad request.&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:70]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:70]</span>
+                <span class="scenario-name">Cadastro sem preencher o email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:70]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:70]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.643 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:70]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def name = java.util.UUID.randomUUID() + &quot;user&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref skipped">72</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def password = Date.now() + &quot;academy&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref skipped">75</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;#(payload.name)&quot;, email: &quot;&quot;, password: &quot;#(payload.password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref skipped">76</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref skipped">77</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref skipped">78</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == { &quot;error&quot;:&quot;Bad request.&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:80]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:80]</span>
+                <span class="scenario-name">Cadastro sem preencher o nome</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:80]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:80]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.670 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[8:80]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref skipped">81</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def email = java.util.UUID.randomUUID() + &quot;@academy-airlines.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref skipped">82</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def password = Date.now() + &quot;academy&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref skipped">83</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref skipped">85</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;&quot;, email: &quot;#(payload.email)&quot;, password: &quot;#(payload.password)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref skipped">87</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref skipped">88</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == { &quot;error&quot;:&quot;Bad request.&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:90]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:90]</span>
+                <span class="scenario-name">Cadastro sem preencher a senha</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:90]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:29:37.696 teste.feature:7
+Given url baseUrl
+js failed:
+&gt;&gt;&gt;&gt;
+01: baseUrl
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;baseUrl&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+teste.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[9:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref skipped">91</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def name = java.util.UUID.randomUUID() + &quot;user&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref skipped">92</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def email = java.util.UUID.randomUUID() + &quot;@academy-airlines.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;payloadUsuario.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref skipped">95</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { name: &quot;#(payload.name)&quot;, email: &quot;#(payload.email)&quot;, password: &quot;&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref skipped">96</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref skipped">97</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref skipped">98</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == { &quot;error&quot;:&quot;Bad request.&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,232 @@
+21:06:30.164 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:21:36.264 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:21:38.686 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: cria.feature - extraneous input '\r\n\r\n    ' expecting {EXAMPLES, STAR, GIVEN, WHEN, THEN, AND, BUT, TAGS}
+21:25:39.901 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:29:25.687 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:29:37.346 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:37.397 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:37.432 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:37.463 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:37.515 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:37.541 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:37.567 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:37.667 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:37.694 [main]  ERROR com.intuit.karate - teste.feature:7
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+teste.feature:7
+21:29:47.092 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) teste.feature
+21:45:30.716 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:45:32.942 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: teste.feature - no viable alternative at input '\r\n\r\n    @Scenario: Cadastro com email já cadastrado\r\n        * '
+21:46:48.748 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:46:51.122 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1658278011104
+21:50:20.286 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:50:22.768 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1658278222750
+21:51:46.742 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:51:49.451 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: teste.feature - no viable alternative at input '\r\n\r\n    @Scenario: Cadastro com email já cadastrado\r\n        * '
+21:52:08.317 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:52:11.145 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: teste.feature - no viable alternative at input '\r\n\r\n    @Scenario: Cadastro com email já cadastrado\r\n        * '
+21:53:03.659 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:53:06.514 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1658278386495
+21:53:24.226 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://rarotube.herokuapp.com/cadastro
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 159
+1 > Host: rarotube.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"name":"af8903dd-72ab-4bf6-9856-40021ca16fd8user","email":"d6a499c2-1deb-4fe0-a1c5-87aae5fe4f3b@teste.com","password":"12345","cPassword":"12345","codigo":{}}
+
+21:53:36.163 [main]  DEBUG com.intuit.karate - response time in milliseconds: 11918
+1 < 405
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < Date: Wed, 20 Jul 2022 00:53:53 GMT
+1 < Content-Type: text/html; charset=UTF-8
+1 < Content-Length: 150
+1 < Via: 1.1 vegur
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+
+21:53:36.180 [main]  ERROR com.intuit.karate - teste.feature:20
+Then status 201
+status code was: 405, expected: 201, response time in milliseconds: 11918, url: https://rarotube.herokuapp.com/cadastro, response: 
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+teste.feature:20
+21:53:44.219 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) teste.feature
+21:55:04.022 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:55:06.580 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1658278506554
+21:55:23.718 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://rarotube.herokuapp.com/cadastro
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 139
+1 > Host: rarotube.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"name":"851bbd7f-9e88-4ade-8bba-5fc2855bfc84user","email":"09929310-4caf-4955-a2c8-9f7bba9d81fc@teste.com","password":"12345","codigo":{}}
+
+21:55:26.490 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2690
+1 < 405
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < Date: Wed, 20 Jul 2022 00:55:44 GMT
+1 < Content-Type: text/html; charset=UTF-8
+1 < Content-Length: 150
+1 < Via: 1.1 vegur
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+
+21:55:26.597 [main]  ERROR com.intuit.karate - teste.feature:19
+Then status 201
+status code was: 405, expected: 201, response time in milliseconds: 2690, url: https://rarotube.herokuapp.com/cadastro, response: 
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+teste.feature:19
+21:55:34.013 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) teste.feature
+21:55:44.161 [main]  INFO  com.intuit.karate - Karate version: 1.2.0
+21:55:46.707 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1658278546659
+21:55:59.499 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://rarotube.herokuapp.com/cadastro
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 139
+1 > Host: rarotube.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 > Accept-Encoding: gzip,deflate
+{"name":"a7e6d090-0773-45f2-9910-8c4ff65ce248user","email":"d677e047-6bc2-4d70-965a-8454cc846fa5@teste.com","password":"12345","codigo":{}}
+
+21:56:01.604 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2084
+1 < 405
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < Date: Wed, 20 Jul 2022 00:56:19 GMT
+1 < Content-Type: text/html; charset=UTF-8
+1 < Content-Length: 150
+1 < Via: 1.1 vegur
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+
+21:56:01.617 [main]  ERROR com.intuit.karate - teste.feature:19
+Then status 201
+status code was: 405, expected: 201, response time in milliseconds: 2084, url: https://rarotube.herokuapp.com/cadastro, response: 
+<html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+teste.feature:19
+21:56:07.753 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) teste.feature
